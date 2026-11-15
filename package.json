@@ -2,14 +2,11 @@
   "name": "arcteus",
   "scripts": {
     "dev": "concurrently --kill-others \"npm --prefix apps/backend run dev\" \"npm --prefix apps/frontend run dev\"",
-    "start": "NODE_ENV=production npm --prefix apps/backend run start",
+    "start": "npm --prefix apps/backend run start",
     "build": "npm --prefix apps/frontend run build",
     "prestart": "npm run build"
   },
   "devDependencies": {
     "concurrently": "^10.0.7"
-  },
-  "dependencies": {
-    "sirv": "^3.0.2"
   }
 }
