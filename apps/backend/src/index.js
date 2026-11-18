@@ -4,7 +4,7 @@ const path = require("path");
 const sirv = require("sirv");
 
 const api = express();
-api.listen(3000); // lol
+api.listen(3004); // lol
 
 if (process.env.NODE_ENV === "production") {
   const serve = sirv(path.join(__dirname, "../../frontend/dist"), {
@@ -15,5 +15,5 @@ if (process.env.NODE_ENV === "production") {
     ignores: [/^\/assets\//],
   });
 
-  http.createServer(serve).listen(3001);
+  http.createServer(serve).listen(3008);
 }
