@@ -11,5 +11,9 @@
   },
   "devDependencies": {
     "concurrently": "^10.0.7"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "lru-cache": "^11.5.3"
   }
 }
